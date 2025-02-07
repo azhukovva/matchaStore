@@ -1,0 +1,65 @@
+.headerContainer {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  top: 2.35rem;
+  transition: color 0.3s ease;
+}
+
+.pageName {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rowTop {
+  background-color: black;
+  padding: 0.65rem 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.35rem;
+}
+
+.rowItem {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.rowItem:hover {
+  opacity: .65;
+}
+
+.navigationItem {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.navigationItem:hover  {
+  opacity: .65;
+}
