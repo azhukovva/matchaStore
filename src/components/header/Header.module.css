@@ -11,7 +11,7 @@
   position: fixed;
   width: 100%;
   top: 2.35rem;
-  transition: color 0.3s ease;
+  transition: color background-color 0.3s ease;
 }
 
 .pageName {
@@ -52,7 +52,7 @@
 }
 
 .rowItem:hover {
-  opacity: .65;
+  opacity: 0.65;
 }
 
 .navigationItem {
@@ -60,6 +60,6 @@
   text-transform: uppercase;
 }
 
-.navigationItem:hover  {
-  opacity: .65;
+.navigationItem:hover {
+  opacity: 0.65;
 }

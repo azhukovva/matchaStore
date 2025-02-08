@@ -42,10 +42,10 @@
   padding: 0.85rem 4rem;
   border-radius: 0.5rem;
   background-color: transparent;
-  border: white .5px solid;
+  border: white 0.5px solid;
   color: white;
   opacity: 0.8;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   margin-top: 2rem;
   cursor: pointer;
@@ -55,3 +55,115 @@
 .btnMain:hover {
   opacity: 1;
 }
+
+/* Story */
+.storyContent {
+  padding: 12rem 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side {
+  padding: 2rem;
+  flex: 1;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.slideImage {
+  /* border-radius: .75rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slideImage.active {
+  opacity: 1;
+}
+
+/* Facts */
+.aboutMatcha {
+  padding: 6rem 11rem 11rem 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.factsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.factItem {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.factNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.07);
+  z-index: 0;
+}
+
+.factText {
+  position: relative;
+  font-size: 1rem;
+  color: black;
+  z-index: 1;
+}
+
+/* Products */
+.menuContent {
+  padding: 6rem 11rem 11rem 11rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.titleMenuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
