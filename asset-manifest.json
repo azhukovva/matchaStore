@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/matchaStore/static/css/main.4c3798cb.css",
-    "main.js": "/matchaStore/static/js/main.e02349e2.js",
+    "main.js": "/matchaStore/static/js/main.57de9223.js",
     "static/media/matchaPrep.mp4": "/matchaStore/static/media/matchaPrep.41cb02b8dc6091888ab3.mp4",
     "static/media/soil.jpg": "/matchaStore/static/media/soil.2eee7bb779ca0f874965.jpg",
     "static/media/cookies.jpg": "/matchaStore/static/media/cookies.644251fb3f0f3d2ec43f.jpg",
@@ -18,10 +18,10 @@
     "static/media/taste.jpg": "/matchaStore/static/media/taste.8b3a80d56553c3bcc8d5.jpg",
     "index.html": "/matchaStore/index.html",
     "main.4c3798cb.css.map": "/matchaStore/static/css/main.4c3798cb.css.map",
-    "main.e02349e2.js.map": "/matchaStore/static/js/main.e02349e2.js.map"
+    "main.57de9223.js.map": "/matchaStore/static/js/main.57de9223.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3798cb.css",
-    "static/js/main.e02349e2.js"
+    "static/js/main.57de9223.js"
   ]
 }
