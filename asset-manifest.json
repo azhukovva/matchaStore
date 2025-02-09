@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/matchaStore/static/css/main.4c3798cb.css",
+    "main.js": "/matchaStore/static/js/main.e02349e2.js",
+    "static/media/matchaPrep.mp4": "/matchaStore/static/media/matchaPrep.41cb02b8dc6091888ab3.mp4",
+    "static/media/soil.jpg": "/matchaStore/static/media/soil.2eee7bb779ca0f874965.jpg",
+    "static/media/cookies.jpg": "/matchaStore/static/media/cookies.644251fb3f0f3d2ec43f.jpg",
+    "static/media/smoothie.jpg": "/matchaStore/static/media/smoothie.6824e2833b26506f8277.jpg",
+    "static/media/fields.jpg": "/matchaStore/static/media/fields.72d860e974365c6494f3.jpg",
+    "static/media/farms.jpg": "/matchaStore/static/media/farms.4e9065e3d15d885dcf8e.jpg",
+    "static/media/fields2.jpg": "/matchaStore/static/media/fields2.56ea7089e4412d36cffa.jpg",
+    "static/media/bread.jpg": "/matchaStore/static/media/bread.bc568edaf634aa52a91e.jpg",
+    "static/media/water.jpg": "/matchaStore/static/media/water.c7bbe6a162f9b8d848b0.jpg",
+    "static/media/matchastory.jpg": "/matchaStore/static/media/matchastory.b0df2de081c45ac699f3.jpg",
+    "static/media/icecream.jpg": "/matchaStore/static/media/icecream.9aa74697b57d1ed9fe47.jpg",
+    "static/media/cheesecake.jpg": "/matchaStore/static/media/cheesecake.13afd7a52b46885c006f.jpg",
+    "static/media/mochi.jpg": "/matchaStore/static/media/mochi.9565fac050143785c52e.jpg",
+    "static/media/taste.jpg": "/matchaStore/static/media/taste.8b3a80d56553c3bcc8d5.jpg",
+    "index.html": "/matchaStore/index.html",
+    "main.4c3798cb.css.map": "/matchaStore/static/css/main.4c3798cb.css.map",
+    "main.e02349e2.js.map": "/matchaStore/static/js/main.e02349e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c3798cb.css",
+    "static/js/main.e02349e2.js"
+  ]
+}
