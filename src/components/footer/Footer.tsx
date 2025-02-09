@@ -193,7 +193,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={classes.infoSection}>
-            <span>You can find Us on</span>
+            <span>Where You can find Us</span>
             <div><Map /></div>
           </div>
         </div>

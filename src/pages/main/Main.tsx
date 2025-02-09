@@ -200,14 +200,14 @@ const Main = () => {
             <h1 style={{ fontSize: "2.5rem", textAlign: "left" }}>
               More than a Green Tea
             </h1>
-            <span style={{ opacity: ".5" }}>
+            <span style={{ opacity: ".5", maxWidth: "60%" }}>
               At MATCHA BRNO, we craft a variety of{" "}
-              <span style={{ fontStyle: "italic", fontSize: "1.5rem" }}>
+              <span style={{ fontStyle: "italic", fontSize: "1.3rem", }}>
                 delicious treats
               </span>{" "}
               infused with the rich, earthy flavors of premium matcha. Whether
               you’re in the mood for a sweet indulgence or a refreshing drink,
-              we have something special for you.
+              we have <span style={{ fontStyle: "italic", fontSize: "1.3rem", }}>something special for you</span>.
             </span>
           </div>
           <div className={classes.productsContainer}>

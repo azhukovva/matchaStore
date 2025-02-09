@@ -2,7 +2,7 @@
   "name": "art_project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://azhukovva.github.io/matchaStore",
+  "homepage": "/matchaStore",
   "dependencies": {
     "@iconify/react": "^5.2.0",
     "@react-google-maps/api": "^2.20.5",

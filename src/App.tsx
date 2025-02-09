@@ -6,7 +6,7 @@ import Recipe from "./pages/recipe/Recipe.tsx";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/matchaStore">
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/recipe/:item" element={<Recipe />}></Route>

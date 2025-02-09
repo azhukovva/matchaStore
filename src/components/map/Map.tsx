@@ -18,7 +18,7 @@ const Map = () => {
     const position: [number, number] = [49.1951, 16.6068]; // Brno, Czech Republic
 
   return (
-    <MapContainer center={position} zoom={14} style={{ height: "58vh", width: "28vw" }}>
+    <MapContainer center={position} zoom={14} style={{ height: "58vh", width: "28vw", borderRadius: "1rem", boxShadow: "0 5px 15px rgba(0, 0, 0, 0.1)" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
