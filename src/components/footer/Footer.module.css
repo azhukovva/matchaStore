@@ -1,3 +1,186 @@
 .footerContainer {
-    
+  padding: 8rem 7rem;
+  background-color: #f4f4f4;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 35vw;
+  gap: 2rem;
+}
+
+.formContainer {
+  flex: 1;
+  min-width: 30vw;
+}
+
+.joinForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.joinForm select {
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* Extra space for icon */
+  width: 100%;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.joinForm select:hover {
+  border-color: #466343;
+}
+
+.joinForm select:focus {
+  border-color: #466343;
+  box-shadow: 0 0 5px rgba(108, 156, 104, 0.5);
+}
+
+.joinForm select option {
+  padding: 10px;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+}
+
+.joinForm select option:disabled {
+  color: #aaa;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #333;
+  pointer-events: none; /* Prevent clicks on icon */
+}
+
+.joinForm input,
+.joinForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.joinForm input:focus,
+/* .joinForm select:focus, */
+.joinForm textarea:focus {
+  border-color: #466343;
+  outline: none;
+}
+
+.joinForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: -0.5rem;
+}
+
+.error {
+  color: rgba(167, 30, 30, 0.713);
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 30vw;
+}
+
+.textContainer h1 {
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.textContainer span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #0000007a;
+  line-height: 1.5;
+}
+
+.text span {
+  display: block;
+  margin-top: 1rem;
+  color: #000000;
+}
+
+.submitButton {
+  background-color: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #466343;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  min-width: 28vw;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoSection span {
+  font-size: 1.4rem;
+  font-weight: 200;
+  opacity: 0.5;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hours p * {
+  font-weight: 600;
 }

@@ -216,7 +216,7 @@ const Main = () => {
         </div>
       </Page>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
