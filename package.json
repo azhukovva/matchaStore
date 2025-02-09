@@ -2,6 +2,7 @@
   "name": "art_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://azhukovva.github.io/matchaStore",
   "dependencies": {
     "@iconify/react": "^5.2.0",
     "@react-google-maps/api": "^2.20.5",
@@ -19,6 +20,8 @@
     "swiper": "^11.2.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3"
+    "@types/react-dom": "^19.0.3",
+    "gh-pages": "^6.3.0"
   }
 }
