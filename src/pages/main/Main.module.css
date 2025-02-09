@@ -33,8 +33,8 @@
 }
 
 .overlayText p {
-  font-size: 1.25rem;
-  opacity: 0.85;
+  font-size: 1rem;
+  opacity: 0.65;
   margin: 0;
 }
 
@@ -110,12 +110,98 @@
 
 /* Facts */
 .aboutMatcha {
-  padding: 6rem 11rem 11rem 11rem;
+  padding: 7rem 17rem 10rem 17rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+}
+
+.elementsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  text-align: left;
+  flex: 1;
+}
+
+.list span {
+  font-size: 1.7rem;
+  opacity: 0.3;
+}
+
+.elementsText {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+  flex: 1;
+}
+
+.elementsContainer h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  line-height: 100%;
+}
+
+.elementsContainer p {
+  font-size: 1.3rem;
+  opacity: 0.45;
+}
+
+.elementsImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  gap: 1rem;
+  flex: 1;
+}
+
+.imageContainer {
+  position: relative;
+  width: 15vw; /* Set a fixed size for uniformity */
+  height: 15vh;
+  overflow: hidden;
+}
+
+.elementsImages img {
+  width: 15vw; /* Set a fixed size for uniformity */
+  height: 18vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer .imageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.35rem;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.imageContainer:hover img {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.imageContainer:hover .imageText {
+  opacity: 1;
 }
 
 .factsContainer {
@@ -155,7 +241,7 @@
 
 /* Products */
 .menuContent {
-  padding: 6rem 11rem 11rem 11rem;
+  padding: 6rem 11rem 3rem 11rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -166,4 +252,3 @@
   flex-direction: column;
   gap: 2rem;
 }
-

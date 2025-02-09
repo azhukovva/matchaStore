@@ -7,6 +7,7 @@
     "@types/css-modules": "^1.0.5",
     "classnames": "^2.5.1",
     "cra-template": "1.2.0",
+    "framer-motion": "^12.4.1",
     "iconify": "^1.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 
 import classes from "./Products.module.css";
 
@@ -8,8 +8,9 @@ import matchaCheesecake from "../../assets/images/cheesecake.jpg";
 import matchaSmoothie from "../../assets/images/smoothie.jpg";
 import matchaMochi from "../../assets/images/mochi.jpg";
 import matchaBread from "../../assets/images/bread.jpg";
+import { useNavigate } from "react-router-dom";
 
-const products = [
+export const products = [
   {
     img: matchaIceCream,
     title: "Matcha Ice Cream",
@@ -43,9 +44,15 @@ const products = [
 ];
 
 const ProductItem = ({ img, title, desc }) => {
+  const navigate = useNavigate();
   return (
     <div className={classes.productItem}>
-      <img src={img} alt="" className={classes.image} />
+      <img
+        src={img}
+        alt=""
+        className={classes.image}
+        onClick={() => navigate(`/recipe/${title.replace(/\s+/g, "")}`)}
+      />
       <div className={classes.productInfo}>
         <span className={classes.title}>{title}</span>
         <span className={classes.description}>{desc}</span>

@@ -7,10 +7,9 @@ import icons from "../../utils/icons.ts";
 
 type PropsType = {
   textColor?: string;
-  backgroundColor?: string;
 };
 
-const Header = ({ textColor, backgroundColor }) => {
+const Header = ({ textColor }) => {
   return (
     <div
       className={classes.headerContainer}
@@ -33,7 +32,7 @@ const Header = ({ textColor, backgroundColor }) => {
           </p>
         </span>
       </header>
-      <header className={classes.header} >
+      <header className={classes.header}>
         <span className={classes.pageName}>
           <p style={{ display: "flex" }}>
             The MATCH<p style={{ textTransform: "lowercase" }}>a</p>

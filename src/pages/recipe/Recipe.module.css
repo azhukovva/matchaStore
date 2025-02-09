@@ -1,0 +1,77 @@
+.recipeContainer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.recipe {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13rem;
+
+  width: 100%;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  height: 70vh;
+  overflow-y: auto;
+}
+.textContainer ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+}
+
+.textContainer ol {
+  padding-left: 1.5rem;
+  line-height: 2rem;
+}
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 100%;
+}
+
+.description {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.imageContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+
+.imageContainer img {
+    height: 70vh;
+    max-width: 30vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.btnBack {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #00000038;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnBack:hover {
+  color: white;
+  border: transparent;
+  background-color: #000000;
+}
+

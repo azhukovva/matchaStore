@@ -1,0 +1,107 @@
+export const recipes = {
+  "Matcha Ice Cream": {
+    ingredients: [
+      "2 cups heavy cream",
+      "1 cup whole milk",
+      "¾ cup sugar",
+      "2 tbsp matcha powder",
+      "4 egg yolks",
+    ],
+    instructions: [
+      "Whisk matcha powder with a little warm milk until smooth.",
+      "Heat milk, cream, and sugar in a saucepan until warm.",
+      "In a separate bowl, whisk egg yolks.",
+      "Slowly pour the warm mixture into the yolks while whisking.",
+      "Return to heat and cook until thickened.",
+      "Strain, chill, and churn in an ice cream maker.",
+    ],
+  },
+  "Matcha Cookies": {
+    ingredients: [
+      "1 ½ cups flour",
+      "1 tbsp matcha powder",
+      "½ tsp baking soda",
+      "½ cup butter, softened",
+      "½ cup sugar",
+      "1 egg",
+      "1 tsp vanilla",
+    ],
+    instructions: [
+      "Preheat oven to 175°C (350°F).",
+      "Mix flour, matcha, and baking soda.",
+      "Beat butter and sugar, then add egg and vanilla.",
+      "Combine wet and dry ingredients.",
+      "Scoop dough onto a baking sheet and bake for 10-12 min.",
+    ],
+  },
+  "Matcha Bread": {
+    ingredients: [
+      "2 cups flour",
+      "2 tbsp matcha powder",
+      "1 tbsp baking powder",
+      "½ tsp salt",
+      "½ cup sugar",
+      "1 cup milk",
+      "¼ cup vegetable oil",
+      "2 eggs",
+    ],
+    instructions: [
+      "Preheat oven to 175°C (350°F).",
+      "Mix dry ingredients in a bowl.",
+      "Whisk milk, oil, and eggs separately, then combine with dry ingredients.",
+      "Pour batter into a greased loaf pan.",
+      "Bake for 40-45 min until a toothpick comes out clean.",
+      "Cool before slicing and serving.",
+    ],
+  },
+  "Matcha Cheesecake": {
+    ingredients: [
+      "200g digestive biscuits",
+      "100g melted butter",
+      "500g cream cheese",
+      "¾ cup sugar",
+      "2 tbsp matcha powder",
+      "2 eggs",
+      "½ cup heavy cream",
+    ],
+    instructions: [
+      "Preheat oven to 160°C (320°F).",
+      "Crush biscuits and mix with melted butter, then press into a pan.",
+      "Whisk cream cheese, sugar, and matcha powder until smooth.",
+      "Add eggs one at a time, mixing well.",
+      "Stir in heavy cream, then pour over the crust.",
+      "Bake for 40-50 min until set, then cool before serving.",
+    ],
+  },
+  "Matcha Smoothie": {
+    ingredients: [
+      "1 banana",
+      "1 cup almond milk",
+      "1 tsp matcha powder",
+      "½ cup ice",
+      "1 tbsp honey (optional)",
+    ],
+    instructions: [
+      "Combine all ingredients in a blender.",
+      "Blend until smooth and creamy.",
+      "Pour into a glass and serve immediately.",
+    ],
+  },
+  "Matcha Mochi": {
+    ingredients: [
+      "1 cup glutinous rice flour",
+      "¾ cup water",
+      "½ cup sugar",
+      "2 tbsp matcha powder",
+      "Cornstarch (for dusting)",
+      "Sweet red bean paste or matcha filling",
+    ],
+    instructions: [
+      "Mix rice flour, matcha powder, sugar, and water until smooth.",
+      "Microwave for 2 min, stir, then microwave for another min until doughy.",
+      "Dust a surface with cornstarch and roll out the mochi dough.",
+      "Cut into pieces and fill with red bean paste or matcha filling.",
+      "Seal and roll into balls, then serve.",
+    ],
+  },
+};

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Page from "../../components/page/Page.tsx";
 import classes from "./Main.module.css";
-import matchaPrep from "../../assets/matchaPrep.mp4";
+import matchaPrep from "../../assets/videos/matchaPrep.mp4";
 import Header from "../../components/header/Header.tsx";
 import Footer from "../../components/footer/Footer.tsx";
+import Products from "../products/Products.tsx";
+
 import img1 from "../../assets/images/fields.jpg";
 import img2 from "../../assets/images/fields2.jpg";
 import img3 from "../../assets/images/matchastory.jpg";
-import Products from "../products/Products.tsx";
+import img4 from "../../assets/images/water.jpg";
+import img5 from "../../assets/images/soil.jpg";
+import img6 from "../../assets/images/farms.jpg";
+import img7 from "../../assets/images/taste.jpg";
+
+import { motion } from "framer-motion";
 
 const Slideshow = ({ images, interval = 2500 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,28 +66,23 @@ const FactItem = ({ text, index }) => {
 
 const Main = () => {
   const [textColor, setTextColor] = useState("white");
-  const [headerBg, setheaderBg] = useState("transparent");
 
   // Story slideshow images
   const images = [img1, img2, img3];
   // Facts indexes
   const matchaLetters = "MATCHA".split("");
+  // Story slideshow images
+  const elementsImages = [img4, img5, img6, img7];
 
   const handleScroll = () => {
     const isSecondPage = window.innerHeight;
-    const menuSection = document.getElementById("our-menu");
+    const menuSection = document.getElementById("our-matcha");
     const menuSectionTop = menuSection ? menuSection.offsetTop : 0;
 
     if (window.scrollY >= isSecondPage) {
       setTextColor("black");
     } else {
       setTextColor("white");
-    }
-
-    if (window.scrollY >= menuSectionTop) {
-      setheaderBg("white");
-    } else {
-      setheaderBg("transparent");
     }
   };
 
@@ -93,7 +95,7 @@ const Main = () => {
 
   return (
     <>
-      <Header textColor={textColor} backgroundColor={headerBg}/>
+      <Header textColor={textColor} />
       <Page>
         <div className={classes.video_container}>
           <video
@@ -113,7 +115,7 @@ const Main = () => {
             <p>Matcha for a healthy and beautiful life</p>
             <p>The taste of Japan in the heart of Europe</p>
           </span>
-          <a href="#our-story">
+          <a href="#our-matcha">
             <button className={classes.btnMain}>Learn more</button>
           </a>
         </div>
@@ -151,6 +153,39 @@ const Main = () => {
               Where Tradition Meets Modern Taste
             </span>
           </div>
+          <div className={classes.elementsContainer}>
+            <motion.div
+              className={classes.elementsText}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <h1>100% organic</h1>
+              <p>4 Key Elements</p>
+            </motion.div>
+
+            <div className={classes.elementsImages}>
+              <div className={classes.imageContainer}>
+                <img src={img4} alt="water" />
+                <div className={classes.imageText}>Clean Water</div>
+              </div>
+              <div className={classes.imageContainer}>
+                <img src={img5} alt="soil" />
+                <div className={classes.imageText}>Fertile Soil</div>
+              </div>
+              <div className={classes.imageContainer}>
+                <img src={img6} alt="farms" />
+                <div className={classes.imageText}>Secluded Farms</div>
+              </div>
+              <div className={classes.imageContainer}>
+                <img src={img7} alt="taste" />
+                <div className={classes.imageText}>Perfect Taste</div>
+              </div>
+            </div>
+          </div>
+
+          <h1>Did You Know That</h1>
           <div className={classes.factsContainer}>
             {matchaFacts.map((fact, index) => (
               <FactItem text={fact} index={matchaLetters[index]} key={index} />
@@ -162,12 +197,17 @@ const Main = () => {
       <Page backgroundColor="rgba(0, 0, 0, 0.1)" isWithFitContent>
         <div className={classes.menuContent} id="our-menu">
           <div className={classes.titleMenuContainer}>
-            <h1 style={{ fontSize: "2.5rem", textAlign: "left" }}>What Can You Do With Matcha</h1>
+            <h1 style={{ fontSize: "2.5rem", textAlign: "left" }}>
+              More than a Green Tea
+            </h1>
             <span style={{ opacity: ".5" }}>
-              At MATCHA BRNO, we craft a variety of delicious treats infused
-              with the rich, earthy flavors of premium matcha. Whether you’re in
-              the mood for a sweet indulgence or a refreshing drink, we have
-              something special for you.
+              At MATCHA BRNO, we craft a variety of{" "}
+              <span style={{ fontStyle: "italic", fontSize: "1.5rem" }}>
+                delicious treats
+              </span>{" "}
+              infused with the rich, earthy flavors of premium matcha. Whether
+              you’re in the mood for a sweet indulgence or a refreshing drink,
+              we have something special for you.
             </span>
           </div>
           <div className={classes.productsContainer}>
